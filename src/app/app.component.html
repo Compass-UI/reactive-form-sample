@@ -7,5 +7,7 @@
   Arrival: <input formControlName="toCity" type="text">
 
   <!-- <input type="submit" (ngSubmit)="submit(searchForm)"> -->
-  <input type="submit" (click)="submit(searchForm)">
+  <input type="submit" 
+    (click)="submit(searchForm)"
+    [disabled]="!searchForm.valid">
 </form>
