@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlightSearchService } from './flight-search.service';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    FlightSearchService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
