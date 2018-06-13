@@ -11,10 +11,11 @@ export class AppComponent implements OnInit{
 
   submit(form){
     console.log(form);
+    console.log(`Flying from ${form.value.fromCity} to ${form.value.toCity}`);
   }
   ngOnInit(){
-    let fromCity = new FormControl();
-    let toCity = new FormControl();
+    let fromCity = new FormControl('ORD');
+    let toCity = new FormControl('SFO');
     this.searchForm = new FormGroup({
       fromCity: fromCity,
       toCity: toCity
