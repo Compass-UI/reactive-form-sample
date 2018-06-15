@@ -17,6 +17,9 @@
     State: <input type="text" (ngModel)="state" name="state">
     Country: <input type="text" (ngModel)="country" name="country">
   </div>
+  Image: <input type="text" (ngModel)="imageUrl" name="imageUrl">
+  Copy me: <textarea cols="3" rows="3">https://images.pexels.com/photos/190589/pexels-photo-190589.jpeg?auto=compress&cs=tinysrgb&h=350</em>https://images.pexels.com/photos/190589/pexels-photo-190589.jpeg?auto=compress&cs=tinysrgb&h=350</textarea>
+  <img [src]="loginForm.controls.imageUrl.value" alt="">
 
   <input type="submit">
 

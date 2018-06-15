@@ -13,6 +13,7 @@ export class FormTemplateComponent implements OnInit {
   city: string = '';
   state: string = '';
   country: string = '';
+  imageUrl: string = 'https://images.pexels.com/photos/190589/pexels-photo-190589.jpeg?auto=compress&cs=tinysrgb&h=350';
 
   constructor() { }
 
@@ -21,7 +22,8 @@ export class FormTemplateComponent implements OnInit {
   }
   login(form){
 
-    console.log(form);
+    // console.log(form);
+    console.log(form.address);
     console.log(`User: ${form.agent} Agent: ${form.agent} pass: ${form.password}`);
   }
 
