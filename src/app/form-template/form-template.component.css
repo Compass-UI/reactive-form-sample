@@ -2,3 +2,6 @@
     border: solid 1px lightblue;
     padding: 15px;
 }
+.error{
+    background-color: lightcoral;
+}
