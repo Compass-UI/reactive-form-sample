@@ -21,10 +21,12 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     let fromCity = new FormControl(
       this.flightSearchService.flightSearch().flights[0].from,
-      Validators.required);
+      // [Validators.required, Validators.pattern('[a-z]')]);
+      [Validators.required]);
     let toCity = new FormControl(
       this.flightSearchService.flightSearch().flights[0].to,
-      Validators.required);
+      // [Validators.required, Validators.pattern('[a-z]')]);
+      [Validators.required]);
     this.searchForm = new FormGroup({
       fromCity: fromCity,
       toCity: toCity
