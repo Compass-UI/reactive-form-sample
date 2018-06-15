@@ -3,8 +3,14 @@
 <h1>Reactive Forms</h1>
 <form autocomplete="off" novalidate
   [formGroup]="searchForm">
-  Departure: <input formControlName="fromCity" type="text">
-  Arrival: <input formControlName="toCity" type="text">
+  <div>
+    <span class="vaidation" *ngIf="!searchForm.controls.fromCity.valid">Departure is required</span>
+    Departure: <input formControlName="fromCity" type="text">
+  </div>
+  <div>
+    <span class="vaidation" *ngIf="!searchForm.controls.toCity.valid">Departure is required</span>
+    Arrival: <input formControlName="toCity" type="text">
+  </div>
 
   <!-- <input type="submit" (ngSubmit)="submit(searchForm)"> -->
   <input type="submit" 
