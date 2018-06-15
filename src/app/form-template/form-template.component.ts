@@ -9,6 +9,10 @@ export class FormTemplateComponent implements OnInit {
   sine: string = '';
   agent: string = '';
   password: string = '';
+  street: string = '';
+  city: string = '';
+  state: string = '';
+  country: string = '';
 
   constructor() { }
 

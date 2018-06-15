@@ -1,14 +1,22 @@
+<h3>Templte Form</h3>
 <form class="component" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
   Sine: <input type="text" 
     (ngModel)="sine" name="sine" 
     [ngClass]="{'error': loginForm.controls.sine?.invalid && loginForm.controls.sine.touched}" 
     required>
   Agent: <input type="text" (ngModel)="agent" name="agent">
-  Password: <input type="text" 
+  Password: <input type="password" 
   (ngModel)="password" name="password"
   [ngClass]="{'error': loginForm.controls.password?.invalid && loginForm.controls.password.touched}" 
   required
   >
+
+  <div ngModelGroup="address">
+    Street: <input type="text" (ngModel)="street" name="street">
+    City: <input type="text" (ngModel)="city" name="city">
+    State: <input type="text" (ngModel)="state" name="state">
+    Country: <input type="text" (ngModel)="country" name="country">
+  </div>
 
   <input type="submit">
 
