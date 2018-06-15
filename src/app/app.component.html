@@ -4,11 +4,11 @@
 <form autocomplete="off" novalidate
   [formGroup]="searchForm">
   <div>
-    <span class="vaidation" *ngIf="!searchForm.controls.fromCity.valid">Departure is required</span>
+    <em class="vaidation" *ngIf="!searchForm.controls.fromCity.valid">Departure is required</em>
     Departure: <input formControlName="fromCity" type="text">
   </div>
   <div>
-    <span class="vaidation" *ngIf="!searchForm.controls.toCity.valid">Departure is required</span>
+    <em class="vaidation" *ngIf="!searchForm.controls.toCity.valid">Departure is required</em>
     Arrival: <input formControlName="toCity" type="text">
   </div>
 
@@ -17,3 +17,5 @@
     (click)="submit(searchForm)"
     [disabled]="!searchForm.valid">
 </form>
+
+<app-form-template></app-form-template>

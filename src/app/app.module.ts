@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlightSearchService } from './flight-search.service';
+import { FormTemplateComponent } from './form-template/form-template.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormTemplateComponent
   ],
   imports: [
     BrowserModule,

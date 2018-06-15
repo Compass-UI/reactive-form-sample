@@ -1,0 +1,8 @@
+<form class="component" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+  Sine: <input type="text" (ngModel)="sine" name="sine">
+  Agent: <input type="text" (ngModel)="agent" name="agent">
+  Password: <input type="text" (ngModel)="password" name="password">
+
+  <input type="submit">
+
+</form>
