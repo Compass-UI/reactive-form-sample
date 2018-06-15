@@ -1,26 +1,28 @@
 <h3>Templte Form</h3>
 <form class="component" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
   Sine: <input type="text" 
-    (ngModel)="sine" name="sine" 
+    [(ngModel)]="sine" name="sine" 
     [ngClass]="{'error': loginForm.controls.sine?.invalid && loginForm.controls.sine.touched}" 
     required>
   Agent: <input type="text" (ngModel)="agent" name="agent">
   Password: <input type="password" 
-  (ngModel)="password" name="password"
+  [(ngModel)]="password" name="password"
   [ngClass]="{'error': loginForm.controls.password?.invalid && loginForm.controls.password.touched}" 
   required
   >
 
   <div ngModelGroup="address">
-    Street: <input type="text" (ngModel)="street" name="street">
-    City: <input type="text" (ngModel)="city" name="city">
-    State: <input type="text" (ngModel)="state" name="state">
-    Country: <input type="text" (ngModel)="country" name="country">
+    Street: <input type="text" [(ngModel)]="street" name="street">
+    City: <input type="text" [(ngModel)]="city" name="city">
+    State: <input type="text" [(ngModel)]="state" name="state">
+    Country: <input type="text" [(ngModel)]="country" name="country">
   </div>
-  Image: <input type="text" (ngModel)="imageUrl" name="imageUrl">
+  Image: <input type="text" [(ngModel)]="imageUrl" name="imageUrl">
   Copy me: <textarea cols="3" rows="3">https://images.pexels.com/photos/190589/pexels-photo-190589.jpeg?auto=compress&cs=tinysrgb&h=350</em>https://images.pexels.com/photos/190589/pexels-photo-190589.jpeg?auto=compress&cs=tinysrgb&h=350</textarea>
   <img [src]="loginForm.controls.imageUrl.value" alt="">
 
   <input type="submit">
+  <input type="button" (click)="sampleData()" value="sampleData">
+  
 
 </form>
