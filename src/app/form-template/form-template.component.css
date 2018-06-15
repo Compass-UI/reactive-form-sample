@@ -5,3 +5,9 @@
 .error{
     background-color: lightcoral;
 }
+.component input{
+    padding: 5px;
+}
+.component input:focus{
+    outline: none;
+}
