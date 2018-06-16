@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-form-template',
@@ -16,6 +17,7 @@ export class FormTemplateComponent implements OnInit {
   imageUrl: string = '';
 
   data: any;
+  rWords;
 
   constructor() { }
 
@@ -49,5 +51,4 @@ export class FormTemplateComponent implements OnInit {
     this.country = this.data.country;
     this.imageUrl= this.data.imageUrl;
   }
-
 }
