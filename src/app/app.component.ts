@@ -10,6 +10,12 @@ import { FlightSearchService } from './flight-search.service'
 export class AppComponent implements OnInit{
   searchForm;
 
+  flights = [
+    {from: 'ORD', to: 'SFO', number: 47},
+    {from: 'DXB', to: 'YYZ', number: 47},
+    {from: 'WAS', to: 'SVO', number: 47},
+  ]
+
   constructor(private flightSearchService: FlightSearchService){
 
   }
@@ -32,4 +38,6 @@ export class AppComponent implements OnInit{
       toCity: toCity
     })
   }
+  
+
 }
