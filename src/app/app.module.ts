@@ -11,6 +11,7 @@ import { NotFound404Component } from './not-found-404/not-found-404.component';
 import { RoutesModule } from './routes/routes.module';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { ChildComponent } from './child/child.component';
+import { SortableListComponent } from './sortable-list/sortable-list.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ChildComponent } from './child/child.component';
     InputComponent,
     NotFound404Component,
     FormReactiveComponent,
-    ChildComponent
+    ChildComponent,
+    SortableListComponent
   ],
   imports: [
     BrowserModule,
